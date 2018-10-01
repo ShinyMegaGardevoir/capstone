@@ -31,6 +31,31 @@ html {
   background-color: $off-white;
 }
 
+#overlay {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+#top, #bottom, #left, #right {
+  position: fixed;
+}
+#left, #right {
+  top: 30%;
+  height: 30%;
+}
+#top, #bottom {
+  bottom: 0px;
+  height: 30%;
+}
+#left { left: 0px; }
+#right { right: 0px; }
+#top { left: 0px; }
+#bottom { right: 0px; }
+#bottom img { height: 100px; width: 100px; }
+#top img { height: 100px; width: 100px; }
+#right img { height: 100px; width: 100px; }
+#left img { height: 100px; width: 100px; }
+
 body {
     overflow-x: hidden;
     font-weight: normal;
@@ -40,4 +65,10 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: transparent;
     background-color: $background-blue;
+}
+
+img {
+  cursor: pointer;
+  bottom: 0;
+  right: 0;
 }
